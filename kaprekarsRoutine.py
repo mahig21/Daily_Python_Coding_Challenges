@@ -24,5 +24,6 @@ def kaprekar(n,count=0):
     n=abs(int(n1)-int(n2))
     return kaprekar(n,count)
 
-count=kaprekar(2025)
+n=int(input("Enter a 4-digit number: "))
+count=kaprekar(n)
 print(count)

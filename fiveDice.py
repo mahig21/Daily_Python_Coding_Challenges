@@ -50,5 +50,7 @@ def five_dice(dice):
     else:
         return "Invalid range of array"
 
-msg=five_dice([1, 4, 5, 6, 2])
+user_input = input("Enter the values of five dice separated by space: ").split()
+dice = [int(num) for num in user_input]
+msg=five_dice(dice)
 print(msg)

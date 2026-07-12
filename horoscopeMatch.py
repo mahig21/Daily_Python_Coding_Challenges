@@ -45,5 +45,7 @@ def horoscope_match(sign1, sign2):
     distance=abs(n1-n2)
     return compatibilty_match(distance)
 
-compatibilty=horoscope_match("Pisces", "Aries")
+sign1=input("Enter the first sign: ")
+sign2=input("Enter the second sign: ")
+compatibilty=horoscope_match(sign1, sign2)
 print(compatibilty)

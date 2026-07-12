@@ -10,5 +10,7 @@ def duplicate_character_count(str1, str2):
             count+=alphacount
     return count
 
-count=duplicate_character_count("jambo", "bonjour")
+str1=input("Enter the first string: ")
+str2=input("Enter the second string: ")
+count=duplicate_character_count(str1, str2)
 print(count)

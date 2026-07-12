@@ -5,5 +5,7 @@ def calculate_bmi(weight, height):
     bmi=(weight/height**2)*703
     return round(bmi,1)
 
-bmi=calculate_bmi(180, 70)
+weight=float(input("Enter weight in pounds: "))
+height=float(input("Enter height in inches: "))
+bmi=calculate_bmi(weight, height)
 print(bmi)

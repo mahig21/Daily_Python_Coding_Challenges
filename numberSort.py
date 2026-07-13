@@ -8,5 +8,6 @@ def sort_numbers(s):
     num_list.sort()
     return num_list
 
-num_list=sort_numbers("5,3,8,1,9,2") 
+string=input("Enter a string of numbers separated by commas: ")
+num_list=sort_numbers(string) 
 print(num_list)

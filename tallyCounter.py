@@ -12,5 +12,6 @@ def get_tally_count(s):
             count+=1
     return count
 
-count=get_tally_count("||||/ ||||/ ||||/ ||||/ ||||/ ||||/ ||||/ ||||/ |") 
+tally_string = input("Enter tally marks: ")
+count=get_tally_count(tally_string) 
 print(count)

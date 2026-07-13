@@ -34,5 +34,6 @@ def make_leet(s):
         else:
             leet_str+=i
     return leet_str
-leet_str=make_leet("cool")
+string=input("Enter a lowercase string: ")
+leet_str=make_leet(string)
 print(leet_str)

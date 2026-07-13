@@ -13,5 +13,7 @@ def guess_number(secret, guess):
         return "lower"
     elif guess<secret:
         return "higher"
-msg=guess_number(85, 99)
+secret=int(input("Enter a secret number: "))
+guess=int(input("Enter a guess: "))
+msg=guess_number(secret, guess)
 print(msg)

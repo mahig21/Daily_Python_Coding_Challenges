@@ -24,5 +24,6 @@ def i_before_e(sentence):
             newSent+=sentence[i]
             flag=0
     return newSent+sentence[-1]
-newSent=i_before_e("we recieved a breif")
+sentence=input("Enter a word or sentence: ")
+newSent=i_before_e(sentence)
 print(newSent)

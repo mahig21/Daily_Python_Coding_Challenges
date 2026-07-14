@@ -16,5 +16,7 @@ def get_oldest(people):
         if i['age']==maxAge:
             oldest+=[i['name']]
     return oldest
-oldest=get_oldest([{ "name": "Allison", "age": 25 }, { "name": "Bill", "age": 30 }, { "name": "Carol", "age": 30 }])
+people=input("Enter the array of objects with name and age separated by commas: ").split(",")
+people=[{"name": p.split()[0], "age": int(p.split()[1])} for p in people]
+oldest=get_oldest(people)
 print(oldest)

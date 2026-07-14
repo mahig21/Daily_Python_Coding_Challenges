@@ -6,5 +6,6 @@ def get_frequency(s):
         charCount=s.count(i)
         set_freq[i]=charCount
     return set_freq
-set_freq=get_frequency("mississippi")
+s=input("Enter a string: ")
+set_freq=get_frequency(s)
 print(set_freq)

@@ -6,5 +6,7 @@ def sum_of_differences(arr):
         difference=arr[i+1]-arr[i]
         sumOfDiff+=difference
     return sumOfDiff
-sumOfDiff=sum_of_differences([9, 6, 15, -20, 33, 14, 25, 16, -7])
+arr=input("Enter the array of numbers separated by spaces: ").split()
+arr=[int(num) for num in arr]
+sumOfDiff=sum_of_differences(arr)
 print(sumOfDiff)

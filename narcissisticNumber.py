@@ -22,5 +22,6 @@ def is_narcissistic(n):
         return True
     else:
         return False
-ans=is_narcissistic(9474)
+n=int(input("Enter a positive integer: "))
+ans=is_narcissistic(n)
 print(ans)

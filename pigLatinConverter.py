@@ -31,5 +31,6 @@ def pig_latin(s):
                 else:
                     ans+=i[len1:]+con+"ay"
     return ans
-ans=pig_latin("The quick brown fox jumped over the lazy dog") 
+s=input("Enter a string: ")
+ans=pig_latin(s) 
 print(ans)

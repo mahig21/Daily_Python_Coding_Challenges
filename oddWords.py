@@ -12,5 +12,6 @@ def get_odd_words(s):
         if len(i)%2!=0:
             odd_str.append(i)
     return " ".join(odd_str)
-odd_str=get_odd_words("banana split sundae with rainbow sprinkles on top")
+str=input("Enter a string of words: ")
+odd_str=get_odd_words(str)
 print(odd_str)

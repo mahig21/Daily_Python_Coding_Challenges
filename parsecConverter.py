@@ -22,5 +22,6 @@ def convert_parsecs(parsecs):
     else:
         ans=2*parsecs
     return ans
-ans=convert_parsecs(17)
+parsecs=int(input("Enter an integer number of parsecs: "))
+ans=convert_parsecs(parsecs)
 print(ans)

@@ -16,5 +16,6 @@ def get_word_score(word):
     for i in word:
         score+=ord(i.upper())-64
     return score
-score=get_word_score("hippopotamus")
+word=input("Enter a word: ")
+score=get_word_score(word)
 print(score)

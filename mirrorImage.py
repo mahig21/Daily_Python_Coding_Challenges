@@ -1,4 +1,4 @@
-#20-07-2026
+#14-05-2026
 """
  * Determines whether a second string is a valid mirror image of the first string.
  *
@@ -49,5 +49,7 @@ def is_mirror_image(s1, s2):
     if s2==newS[::-1]:
         return True
     return False
-ans=is_mirror_image("WTYUIOHAXVMwoxv08=+:|-_*^!.[]{}<>bdpq()", "()pqbd<>{}[].!^*_-|:+=80vxowMVXAHOIUYTW")
+s1=input("Enter the first string: ")
+s2=input("Enter the second string: ")
+ans=is_mirror_image(s1, s2)
 print(ans)

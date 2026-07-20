@@ -47,5 +47,6 @@ def is_in_crossword(char):
                 
     return False
 
-ans = is_in_crossword("I")
+char = input("Enter a character to check in the crossword: ")
+ans = is_in_crossword(char)
 print(ans)

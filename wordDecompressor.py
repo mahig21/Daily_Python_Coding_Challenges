@@ -15,5 +15,6 @@ def decompress(s):
         else:
             new_s.append(i)
     return " ".join(new_s)
-new_s=decompress("practice makes perfect and 3 1 2 3")
+s=input("Enter a compressed string: ")
+new_s=decompress(s)
 print(new_s)

@@ -16,5 +16,6 @@ def compress(s):
         else:
             new_s.append(str(list_s.index(i)+1))
     return " ".join(new_s)
-new_s=compress("lorem ipsum dolor sit per elit donec sit nostra libero per donec ligula sit gravida at elit vitae a elit sodales donec en donec at dolor nam ligula dignissim risus at ligula per nam ipsum ipsum gravida en elit per ipsum ligula en gravida per sodales sit at nam lorem sit per libero en ipsum elit sit sodales sit risus elit risus ipsum elit at gravida vitae en dignissim nam sit vitae sollicitudin per nostra per sit libero")
+s=input("Enter a string to compress: ")
+new_s=compress(s)
 print(new_s)

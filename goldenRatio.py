@@ -13,5 +13,7 @@ def is_golden_ratio(a, b):
     if diff<=0.01:
         return True
     return False
-ans=is_golden_ratio(15,20)
+a=int(input("Enter the first number: "))
+b=int(input("Enter the second number: "))
+ans=is_golden_ratio(a, b)
 print(ans)

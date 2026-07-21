@@ -15,5 +15,7 @@ def blend_words(word1, word2):
     fh_word1=word1[:index1]
     sh_word2=word2[index2:]
     return fh_word1+sh_word2
-new_word=blend_words("hyena", "iguana")
+word1=input("Enter the first word: ")
+word2=input("Enter the second word: ")
+new_word=blend_words(word1, word2)
 print(new_word)

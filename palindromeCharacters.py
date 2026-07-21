@@ -14,5 +14,6 @@ def palindrome_locator(s):
         else:
             return s[(len1//2)-1]+s[len1//2]
     return "none"
-ans=palindrome_locator("freecodecamp")
+s=input("Enter a string: ")
+ans=palindrome_locator(s)
 print(ans)

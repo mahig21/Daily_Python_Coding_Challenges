@@ -12,5 +12,6 @@ def get_initials(name):
     for i in name:
         initials+=i[0]+"."
     return initials
-initials=get_initials("Savanna Puddlesplash")
+name=input("Enter your full name: ")
+initials=get_initials(name)
 print(initials)

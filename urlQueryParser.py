@@ -14,5 +14,6 @@ def parse_url_query(url):
         pair=i.split("=")
         dict_a[pair[0]]=pair[1]
     return dict_a
-dict_a=parse_url_query("https://freecodecamp.org/learn?skill=programming&language=python")
+url=input("Enter a URL with query string: ")
+dict_a=parse_url_query(url)
 print(dict_a)

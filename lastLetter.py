@@ -15,5 +15,6 @@ def get_last_letter(s):
                 maxIndex=alphabets.index(i.lower())
                 lastLetter=i
     return lastLetter
-last_letter=get_last_letter("HeLl0")
+s=input("Enter a string: ")
+last_letter=get_last_letter(s)
 print(last_letter)

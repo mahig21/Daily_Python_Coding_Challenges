@@ -4,6 +4,9 @@ Given an array of integers, return a new array using the following rules:
 1. Sort the integers in ascending order
 2. Then swap all values whose index is a multiple of 3 with the value before it.
 """
+from builtins import int
+
+
 def sort_and_swap(arr):
     arr.sort()
     swap_arr=[]
@@ -20,5 +23,7 @@ def sort_and_swap(arr):
             swap_arr.append(arr[i])
     swap_arr.append(arr[-1])
     return swap_arr
-swap_array=sort_and_swap([9, 7, 5, 3, 1, 2, 4, 6, 8])
+arr=input("Enter an array of integers separated by space: ").split()
+arr=[int(num) for num in arr]
+swap_array=sort_and_swap(arr)
 print(swap_array)

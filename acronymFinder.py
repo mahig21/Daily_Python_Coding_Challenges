@@ -13,6 +13,9 @@
     Each letter in the given acronym should match the first letter of each word 
     in the organization it belongs to, in the same order.
     """
+from builtins import print
+
+
 full_names=["National Avocado Storage Authority",
 "Cats Infiltration Agency",
 "Fluffy Beanbag Inspectors",
@@ -27,5 +30,7 @@ def find_org(acronym):
             acro+=j[0]
         if acronym==acro:
             return i
-full_name=find_org("CIA")
+    return "No organization found for the given acronym."
+acronym=input("Enter an acronym: ")  
+full_name=find_org(acronym)
 print(full_name)

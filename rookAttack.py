@@ -14,5 +14,7 @@ def rook_attack(rook1, rook2):
     if rook1[0]==rook2[0] or rook1[1]==rook2[1]:
         return True
     return False
-ans=rook_attack("A1", "A8")
+rook1=input("Enter the location of the first rook: ")
+rook2=input("Enter the location of the second rook: ")
+ans=rook_attack(rook1, rook2)
 print(ans)

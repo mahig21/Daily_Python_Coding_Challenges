@@ -13,5 +13,6 @@ def sum_letters(s):
         if i.isalpha():
             sum1+=ord(i.upper())-64
     return sum1
-sum1= sum_letters("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ex nisl, pretium eu varius blandit, facilisis quis eros. Vestibulum ante ipsum primis in faucibus orci.")
+s=input("Enter a string: ")
+sum1=sum_letters(s)
 print(sum1)

@@ -35,5 +35,6 @@ def card_values(cards):
     for i in cards:
         values.append(card_value[i[:-1]])
     return values
-values=card_values(["10H", "JH", "QH", "KH", "AH"])
+cards=input("Enter list of cards separated by commas: ").split(",")
+values=card_values(cards)
 print(values)

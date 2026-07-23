@@ -3,5 +3,7 @@
 def sum_array(numbers):
     summ=sum(numbers)
     return summ
-summ=sum_array([203, 145, -129, 6293, 523, -919, 845, 2434])
+numbers=input("Enter list of numbers separated by commas: ").split(",")
+numbers=[int(i) for i in numbers]
+summ=sum_array(numbers)
 print(summ)

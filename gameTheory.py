@@ -27,5 +27,7 @@ def play_game(p1, p2):
     score.append(p1_score)
     score.append(p2_score)
     return score
-score=play_game("CCCDCDCCCDDC", "CCDDCDCDDCCD")
+p1=input("Enter the strategy of player 1: ")
+p2=input("Enter the strategy of player 2: ")
+score=play_game(p1, p2)
 print(score)

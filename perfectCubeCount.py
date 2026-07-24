@@ -21,5 +21,7 @@ def count_perfect_cubes(a, b):
         if cube>=small and cube<=large:
             count+=1
     return count
-count=count_perfect_cubes(3,30)
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+count=count_perfect_cubes(a, b)
 print(count)

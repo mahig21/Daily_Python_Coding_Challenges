@@ -4,8 +4,8 @@ Write a program to add the years Y to D1 and display the new date D2.
 Note: Assume 1 year has 365 days
 """
 import datetime
-date_str=input()
-years=int(input())
+date_str=input("Enter date in format 'MMM DD YYYY': ")
+years=int(input("Enter number of years to add: "))
 current_date=datetime.datetime.strptime(date_str,"%b %d %Y")
 delta=datetime.timedelta(days=365*years)
 new_date=current_date+delta 

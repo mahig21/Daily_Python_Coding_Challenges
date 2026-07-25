@@ -31,5 +31,6 @@ def detect_roast(beans):
         return "Medium"
     elif avg>2.5:
         return "Dark"
-roast_level=detect_roast("--.''--'-''.--..-.--")
+beans=input("Enter a string of coffee beans: ")
+roast_level=detect_roast(beans)
 print(roast_level)

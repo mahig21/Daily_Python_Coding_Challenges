@@ -6,5 +6,7 @@ def passing_count(scores, passing_score):
         if i>=passing_score:
             count+=1
     return count
-count=passing_count([100, 80, 75, 88, 72, 74, 79, 71, 60, 92], 75)
+passing_score=int(input("Enter the passing score: "))
+scores=[int(x) for x in input("Enter the student scores separated by spaces: ").split()]
+count=passing_count(scores, passing_score)
 print(count)

@@ -11,5 +11,6 @@ def convert_words(s):
     for i in words:
         lengths.append(str(len(i)))
     return " ".join(lengths)
-lengths=convert_words("The quick brown fox jumps over the lazy dog")
+s=input("Enter a string of words: ")
+lengths=convert_words(s)
 print(lengths)

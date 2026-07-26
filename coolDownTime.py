@@ -20,5 +20,7 @@ def can_retake(finish_time, current_time):
         return True
     return False
 
-ans=can_retake("2026-03-23T08:00:00", "2026-03-25T14:00:00")
+finish_time=input("Enter the finish time in the format YYYY-MM-DDTHH:MM:SS: ")
+current_time=input("Enter the current time in the format YYYY-MM-DDTHH:MM:SS: ")
+ans=can_retake(finish_time, current_time)
 print(ans)

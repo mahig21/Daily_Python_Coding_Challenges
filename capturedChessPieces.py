@@ -39,5 +39,6 @@ def get_captured_value(pieces):
         countt=pieces.count(i)
         points+=(chess[i][0]-countt)*chess[i][1]
     return points
-ans=get_captured_value(["K", "P", "P", "N", "P", "P", "R", "P", "B", "P", "N", "B"])
+pieces=input("Enter the chess pieces you still have on the board separated by spaces: ").split()
+ans=get_captured_value(pieces)
 print(ans)

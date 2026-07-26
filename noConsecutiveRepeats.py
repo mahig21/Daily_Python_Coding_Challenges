@@ -9,5 +9,6 @@ def has_no_repeats(s):
         if len(i)!=len(set_a):
             return False
     return True
-ans=has_no_repeats("freeCodeCamp")
+s=input("Enter a string: ")
+ans=has_no_repeats(s)
 print(ans)

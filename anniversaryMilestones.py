@@ -38,5 +38,6 @@ def get_milestone(years):
         years-=1
         if years in milestones:
             return milestones[years]
-ans=get_milestone(8)
+years=int(input("Enter the number of years married: "))
+ans=get_milestone(years)
 print(ans)

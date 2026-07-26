@@ -4,5 +4,7 @@ def is_evenly_divisible(a, b):
     if (a%b)==0:
         return True
     return False
-ans=is_evenly_divisible(3186, 9)
+a=int(input("Enter the first integer: "))
+b=int(input("Enter the second integer: "))
+ans=is_evenly_divisible(a, b)
 print(ans)

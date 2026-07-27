@@ -6,5 +6,5 @@ def is_pronic(n):
         if i*(i+1)==n:
             return True
     return False
-ans=is_pronic(12)
+ans=is_pronic(int(input("Enter a number: ")))
 print(ans)

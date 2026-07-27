@@ -27,5 +27,5 @@ def count_letters_and_numbers(s):
     number_word = "number" if digits == 1 else "numbers"
     return f"The string has {letters} {letter_word} and {digits} {number_word}."
 
-output_str = count_letters_and_numbers("A1!")
+output_str = count_letters_and_numbers(input("Enter a string: "))
 print(output_str)

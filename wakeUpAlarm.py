@@ -25,6 +25,7 @@ def alarm_check(alarm_time, wake_time):
         return "on time"
     else:
         return "late"
-
-ans=alarm_check("08:10", "08:15")
+alarm_time=input("Enter the alarm time in HH:MM format: ")
+wake_time=input("Enter the wake up time in HH:MM format: ")
+ans=alarm_check(alarm_time, wake_time)
 print(ans)

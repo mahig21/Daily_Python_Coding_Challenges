@@ -24,5 +24,7 @@ def count_business_days(start, end):
     if day!="Sunday" and day!="Saturday":
         weekdays+=1
     return weekdays
-weekdays=count_business_days("2026-02-24", "2026-02-28")
+start=input("Enter start date (YYYY-MM-DD): ")
+end=input("Enter end date (YYYY-MM-DD): ")
+weekdays=count_business_days(start, end)
 print(weekdays)

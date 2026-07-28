@@ -37,5 +37,7 @@ def can_donate(donor, recipient):
     elif donorBG==recipientBG:
         return True
     return False
-ans=can_donate("A+", "AB+")
+donor=input("Enter donor blood type: ")
+recipient=input("Enter recipient blood type: ")
+ans=can_donate(donor, recipient)
 print(ans)

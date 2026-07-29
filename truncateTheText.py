@@ -6,4 +6,5 @@ def truncate_text(text):
         return text
     else:
         return text[:17]+"..."
-print(truncate_text("This string should get truncated."))
+text=input("Enter a string: ")
+print(truncate_text(text))

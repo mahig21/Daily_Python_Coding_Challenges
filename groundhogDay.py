@@ -20,5 +20,10 @@ def groundhog_day_prediction(appearance):
         return "It's going to be an early spring."
     return "No prediction this year."
 
-prediction=groundhog_day_prediction(True)
+appearance=input("Did the groundhog see its shadow? (True/False): ")
+if appearance=="True":
+    appearance=True     
+elif appearance=="False":
+    appearance=False
+prediction=groundhog_day_prediction(appearance)
 print(prediction)

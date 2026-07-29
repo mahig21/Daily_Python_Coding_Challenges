@@ -12,4 +12,6 @@ def count_change(change):
     summ=sum(change)/100
     return f"${summ:.2f}"
 
+change=input("Enter the coin values in cents, separated by commas: ")
+change=[int(x) for x in change.split(",")]
 print(count_change([10, 5, 1, 10, 1, 25, 1, 1, 5, 1, 10]))

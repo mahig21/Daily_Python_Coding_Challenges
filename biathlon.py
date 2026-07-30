@@ -12,4 +12,7 @@ def calculate_penalty_distance(rounds):
     for i in rounds:
         penalty+=(5-i)*150
     return penalty
-print(calculate_penalty_distance([4, 3, 0, 3]))
+
+rounds=input("Enter the number of targets hit in each round, separated by commas: ")
+rounds=[int(x) for x in rounds.split(",")]
+print(calculate_penalty_distance(rounds))

@@ -53,4 +53,7 @@ def get_average_grade(scores):
         return "F"
     else:
         return "Invalid"
-print(get_average_grade([97, 98, 99, 100, 96, 97, 98, 99, 100]))
+
+scores=input("Enter the scores separated by commas: ")
+scores_list=[int(score) for score in scores.split(",")]
+print(get_average_grade(scores_list))

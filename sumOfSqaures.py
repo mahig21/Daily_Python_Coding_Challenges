@@ -5,4 +5,5 @@ def sum_of_squares(n):
     for i in range(1,n+1):
         summ+=i*i
     return summ
-print(sum_of_squares(10))
+n=int(input("Enter a positive integer up to 1,000: "))
+print(sum_of_squares(n))

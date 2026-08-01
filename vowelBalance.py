@@ -28,4 +28,5 @@ def is_balanced(s):
         return True
     return False
 
-print(is_balanced("Lorem Ipsum"))
+s=input("Enter a string: ")
+print(is_balanced(s))

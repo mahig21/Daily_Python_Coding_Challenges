@@ -20,4 +20,7 @@ def find_target(arr, target):
                 target_index.append(j)
                 return target_index
     return "Target not found"
-print(find_target([1, 3, 5, 6, 7, 8], 15))
+arr=input("Enter an array of numbers separated by commas: ").split(",")
+arr=[int(i) for i in arr]   
+target=int(input("Enter the target sum: "))
+print(find_target(arr, target))

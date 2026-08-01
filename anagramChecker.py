@@ -10,4 +10,6 @@ def are_anagrams(str1, str2):
     str1.sort()
     str2.sort()
     return str1==str2
-print(are_anagrams("A gentleman", "Elegant man"))
+str1=input("Enter the first string: ")
+str2=input("Enter the second string: ")
+print(are_anagrams(str1, str2))

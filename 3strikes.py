@@ -8,4 +8,6 @@ def squares_with_three(n):
         if '3' in square:
             count3+=1
     return count3
-print(squares_with_three(100))
+
+n=int(input("Enter an integer from 1 to 10,000: "))
+print(squares_with_three(n))

@@ -15,4 +15,5 @@ def vowel_case(s):
         else:
             vowelcase+=i.lower()
     return vowelcase
-print(vowel_case("HELLO, world!"))
+s=input("Enter a string: ")
+print(vowel_case(s))

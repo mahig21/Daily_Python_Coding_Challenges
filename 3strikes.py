@@ -1,0 +1,11 @@
+#20-08-26
+#Given an integer between 1 and 10,000, return a count of how many numbers from 1 up to that integer whose square contains at least one digit 3.
+
+def squares_with_three(n):
+    count3=0
+    for i in range(1,n):
+        square=str(i*i)
+        if '3' in square:
+            count3+=1
+    return count3
+print(squares_with_three(100))

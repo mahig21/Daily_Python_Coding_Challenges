@@ -34,4 +34,5 @@ def to_camel_case(s):
             camelCase+=first.upper()
             camelCase+=rest.lower()
     return camelCase
-print(to_camel_case("secret agent-X"))
+s=input("Enter a string: ")
+print(to_camel_case(s))

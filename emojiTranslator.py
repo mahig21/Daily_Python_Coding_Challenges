@@ -34,4 +34,5 @@ def get_emoji_phrase(s):
     for i in s:
         word_list.append(emojis[i])
     return " ".join(word_list)
-print(get_emoji_phrase("🧊🧊👶"))
+s=input("Enter a string of emojis: ")
+print(get_emoji_phrase(s))

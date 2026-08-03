@@ -13,4 +13,6 @@ def is_integer_hypotenuse(a, b):
     if ".0" in hypo:
         return True
     return False
-print(is_integer_hypotenuse(3, 4))
+a=int(input("Enter the length of the first leg: "))
+b=int(input("Enter the length of the second leg: "))
+print(is_integer_hypotenuse(a, b))

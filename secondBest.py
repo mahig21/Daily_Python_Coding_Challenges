@@ -14,4 +14,8 @@ def get_laptop_cost(laptops, budget):
     for i in range(1,len(laptops)):
         if laptops[-2]<=budget:
             return laptops[-2]
-print(get_laptop_cost([2099, 1599, 1899, 1499], 2200))
+
+laptops=input("Enter the prices of laptops separated by commas: ")
+laptops=[int(i) for i in laptops.split(",")]
+budget=int(input("Enter your budget: "))
+print(get_laptop_cost(laptops, budget))

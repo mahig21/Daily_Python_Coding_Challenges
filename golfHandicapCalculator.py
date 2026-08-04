@@ -12,4 +12,8 @@ def calculate_handicap(scores, pars):
         summ+=scores[i]-pars[i]
     avg=round((summ)/len(scores)+1e-9,1)
     return avg
-print(calculate_handicap([42, 45, 46, 44], [36, 36, 36, 36]))
+scores=input("Enter the golf scores separated by spaces: ").split()
+pars=input("Enter the course par values separated by spaces: ").split()
+scores = [int(x) for x in scores]
+pars = [int(x) for x in pars]
+print(calculate_handicap(scores, pars))

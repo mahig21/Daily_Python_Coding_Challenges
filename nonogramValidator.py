@@ -21,4 +21,8 @@ def is_valid_nonogram(clue, cells):
     if countt!=0:
         newClue.append(countt)
     return (newClue==clue)
-print(is_valid_nonogram([1, 1, 1, 1], [0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0]))
+clue=input("Enter the clue numbers separated by spaces: ").split()
+cells=input("Enter the cells (1 for filled, 0 for empty) separated by spaces: ").split()
+clue = [int(x) for x in clue]
+cells = [int(x) for x in cells]
+print(is_valid_nonogram(clue, cells))

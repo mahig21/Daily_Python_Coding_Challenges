@@ -33,5 +33,6 @@ def evaluate(numbers, operators):
         else:
             opIndex+=1
     return ans
-
-print(evaluate([17, 61, 40, 24, 38, 14], ['+', '%']))
+numbers=[int(x) for x in input("Enter the numbers separated by spaces: ").split()]
+operators=input("Enter the operators separated by spaces: ").split()
+print(evaluate(numbers, operators))

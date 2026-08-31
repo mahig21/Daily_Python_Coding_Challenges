@@ -21,4 +21,5 @@ def is_unnatural_prime(n):
             return False
     if flag==0:
         return True
-print(is_unnatural_prime(-61))
+n=int(input("Enter an integer: "))
+print(is_unnatural_prime(n))

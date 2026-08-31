@@ -31,8 +31,6 @@ def generate_hex(color):
         return str(callB)+"000FF"
     else:
         return "Invalid color" 
-print(generate_hex("yellow"))
-print(generate_hex("red"))
-print(generate_hex("red"))
-print(generate_hex("green"))
-print(generate_hex("blue"))
+
+color=input("Enter a color (red, green, or blue): ")
+print(generate_hex(color))

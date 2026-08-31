@@ -47,4 +47,7 @@ def battle(my_army, opposing_army):
         return "We won"
     elif myScore<opponentScore:
         return "We lost"
-print(battle("Wizards", "Dragons"))
+
+my_army=input("Enter your army: ")
+opposing_army=input("Enter the opposing army: ")
+print(battle(my_army, opposing_army))

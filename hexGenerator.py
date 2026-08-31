@@ -1,0 +1,38 @@
+#31-8-26
+"""
+Given a named CSS color string, generate a random hexadecimal (hex) color code that
+is dominant in the given color.
+
+- The function should handle "red", "green", or "blue" as an input argument.
+- If the input is not one of those, the function should return "Invalid color".
+- The function should return a random six-character hex color code where the
+  input color value is greater than any of the others.
+- Example of valid outputs for a given input:
+
+Input    | Output
+-------------------
+"red"    | "FF0000"
+"green"  | "00FF00"
+"blue"   | "0000FF"
+"""
+callR=-1
+callG=-1
+callB=-1
+def generate_hex(color):
+    global callR,callB,callG
+    if color=="red":
+        callR+=1
+        return "FF000"+str(callR)
+    elif color == "green":
+        callG+=1
+        return "00FF0"+str(callG)
+    elif color == "blue":
+        callB+=1
+        return str(callB)+"000FF"
+    else:
+        return "Invalid color" 
+print(generate_hex("yellow"))
+print(generate_hex("red"))
+print(generate_hex("red"))
+print(generate_hex("green"))
+print(generate_hex("blue"))

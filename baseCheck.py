@@ -32,5 +32,6 @@ def is_valid_number(n, base):
                 return False
             
     return True
-
-print(is_valid_number("ABC", 16))
+n=input("Enter a string representing a number: ")
+base=int(input("Enter a base (2-36): "))
+print(is_valid_number(n, base))

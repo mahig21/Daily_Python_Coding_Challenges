@@ -14,4 +14,5 @@ def find_duplicates(arr):
                 duplicates.append(i)
     duplicates.sort()
     return duplicates
-print(find_duplicates([1, 2, 3, 4, 1, 2]))
+arr=[int(x) for x in input("Enter the numbers separated by spaces: ").split()]
+print(find_duplicates(arr))

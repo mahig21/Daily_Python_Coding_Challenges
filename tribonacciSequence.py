@@ -26,5 +26,7 @@ def tribonacci_sequence(start_sequence, length):
             b=c
             c=summ
         return start_sequence
-print(tribonacci_sequence([10, 20, 30], 2))
-print(tribonacci_sequence([123, 456, 789], 8))
+start_sequence=input("Enter the first three numbers of a Tribonacci sequence (comma-separated): ")
+start_sequence=[int(x) for x in start_sequence.split(",")]  
+length=int(input("Enter the length of the sequence: "))
+print(tribonacci_sequence(start_sequence, length))

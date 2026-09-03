@@ -26,5 +26,6 @@ def rgb_to_hex(rgb):
     for i in num:
         hexStr += f"{i:02x}"
     return hexStr
-print(rgb_to_hex("rgb(1, 11, 111)"))
+rgb=input("Enter a CSS rgb(r, g, b) color string: ")
+print(rgb_to_hex(rgb))
 

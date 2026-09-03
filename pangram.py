@@ -16,4 +16,6 @@ def is_pangram(sentence, letters):
     set_letters=set(letters)
     return set_letters==set_sentence
 
-print(is_pangram("Hello World!", "helowrd"))
+sentence=input("Enter a word or sentence: ")
+letters=input("Enter a string of lowercase letters: ")
+print(is_pangram(sentence, letters))

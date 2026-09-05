@@ -23,7 +23,5 @@ def is_valid_ipv4(ipv4):
         if (i[0]=='0' and int(i)!=0) or (i.count('0')>1 and int(i)==0):
             return False
     return True
-print(is_valid_ipv4("255.01.50.111"))
-print(is_valid_ipv4("192168145213"))
-print(is_valid_ipv4("256.101.50.115"))
-print(is_valid_ipv4("192.168.1.1"))
+ipv4=input("Enter an IPv4 address: ")
+print(is_valid_ipv4(ipv4))

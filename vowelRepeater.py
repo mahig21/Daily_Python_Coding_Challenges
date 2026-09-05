@@ -24,4 +24,6 @@ def repeat_vowels(s):
         else:
             repeatStr+=i
     return repeatStr
-print(repeat_vowels("freeCodeCamp"))
+
+s=input("Enter a string: ")
+print(repeat_vowels(s))

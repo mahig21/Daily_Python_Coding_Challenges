@@ -20,4 +20,6 @@ def rotate(matrix):
         rotated_matrix.append(matrix_row[::-1])
     return rotated_matrix
 
-print(rotate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+matrix = input("Enter a matrix (e.g. [[1, 2], [3, 4]]): ")
+matrix = eval(matrix)
+print(rotate(matrix))

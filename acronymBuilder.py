@@ -19,4 +19,5 @@ def build_acronym(s):
             continue
         acronym+=i[0].upper()
     return acronym
-print(build_acronym("Federal Bureau of Investigation"))
+s=input("Enter a string: ")
+print(build_acronym(s))

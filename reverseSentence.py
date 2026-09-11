@@ -10,5 +10,5 @@ def reverse_sentence(sentence):
     words=sentence.split()
     reverse=words[::-1]
     return " ".join(reverse)
-
-print(reverse_sentence("npm  install   apt    sudo"))
+sentence=input("Enter a sentence: ")
+print(reverse_sentence(sentence))
